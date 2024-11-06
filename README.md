@@ -3,6 +3,7 @@
 This repository provides a PyTorch implementation of a multi-branch neural network for image classification. The model combines local and global branches, leveraging both convolutional and transformer-based layers for comprehensive feature extraction.
 
 ## Overview
+()
 
 The model consists of:
 - **Local Branch**: Convolutional layers for capturing fine-grained, localized features.
