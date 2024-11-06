@@ -104,64 +104,6 @@ def read_pickle(file_name: str) -> list:
         info_list = pickle.load(f)
         return info_list
 
-# class FocalLoss(torch.nn.Module):
-#     def __init__(self, alpha=1, gamma=2, reduction='mean'):
-#         super(FocalLoss, self).__init__()
-#         self.alpha = alpha
-#         self.gamma = gamma
-#         self.reduction = reduction
-#
-#     def forward(self, inputs, targets):
-#         bce_loss = torch.nn.functional.binary_cross_entropy_with_logits(inputs, targets, reduction='none')
-#         pt = torch.exp(-bce_loss)  # 预测为正样本的概率
-#         F_loss = self.alpha * (1 - pt) ** self.gamma * bce_loss
-#
-#         if self.reduction == 'mean':
-#             return torch.mean(F_loss)
-#         elif self.reduction == 'sum':
-#             return torch.sum(F_loss)
-#         else:
-#             return F_loss
-
-# def train_one_epoch(model, optimizer, data_loader, device, epoch, lr_scheduler):
-#     model.train()
-#     loss_function = nn.CrossEntropyLoss()  # 使用交叉熵损失函数
-#     accu_loss = torch.zeros(1).to(device)
-#     accu_num = torch.zeros(1).to(device)
-#     optimizer.zero_grad()
-#
-#     sample_num = 0
-#     data_loader = tqdm(data_loader, file=sys.stdout)
-#     for step, data in enumerate(data_loader):
-#         images, labels = data
-#         sample_num += images.shape[0]
-#
-#         pred = model(images.to(device))
-#         pred_classes = torch.max(pred, dim=1)[1]
-#         accu_num += torch.eq(pred_classes, labels.to(device)).sum()
-#
-#         loss = loss_function(pred, labels.to(device))
-#         loss.backward()
-#         accu_loss += loss.detach()
-#
-#         data_loader.desc = "[train epoch {}] loss: {:.3f}, acc: {:.3f}, lr: {:.5f}".format(
-#             epoch,
-#             accu_loss.item() / (step + 1),
-#             accu_num.item() / sample_num,
-#             optimizer.param_groups[0]["lr"]
-#         )
-#
-#         if not torch.isfinite(loss):
-#             print('WARNING: non-finite loss, ending training ', loss)
-#             sys.exit(1)
-#
-#         optimizer.step()
-#         optimizer.zero_grad()
-#         # update lr
-#         lr_scheduler.step()
-#
-#     return accu_loss.item() / (step + 1), accu_num.item() / sample_num
-
 def train_one_epoch(model, optimizer, data_loader, device, epoch, lr_scheduler):
     model.train()
     loss_function = nn.CrossEntropyLoss()  # 使用交叉熵损失函数
