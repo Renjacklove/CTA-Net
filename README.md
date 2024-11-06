@@ -23,6 +23,6 @@ The model consists of:
    git clone https://github.com/Renjacklove/CTA-Net.git
    cd CTA-Net
 
-##DOI
+## DOI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14046093.svg)](https://doi.org/10.5281/zenodo.14046093)
