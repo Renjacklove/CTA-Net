@@ -111,8 +111,8 @@ class AFFN(nn.Module):
         weights = self.weight_predictor(combined)
 
         # Ensure weights are reshaped correctly
-        local_weight = weights[:, 0, :, :].unsqueeze(1)
-        global_weight = weights[:, 1, :, :].unsqueeze(1)
+        local_weight = weights[:, :, :, :].unsqueeze(1)
+        global_weight = weights[:, :, :, :].unsqueeze(1)
 
         # Weighted sum of local and global features
         combined = local_weight * x + global_weight * y
