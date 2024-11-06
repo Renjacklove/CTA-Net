@@ -175,8 +175,7 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, lr_scheduler):
         images, labels = data
         sample_num += images.shape[0]
 
-        # pred, _ = model(images.to(device))  # 提取模型输出的第一个元素
-        pred= model(images.to(device))  # 提取模型输出的第一个元素
+        pred, _ = model(images.to(device))  
         pred_classes = torch.max(pred, dim=1)[1]
         accu_num += torch.eq(pred_classes, labels.to(device)).sum()
 
@@ -218,8 +217,7 @@ def evaluate(model, data_loader, device, epoch):
         images, labels = data
         sample_num += images.shape[0]
 
-        # pred, _ = model(images.to(device))  # 提取模型输出的第一个元素
-        pred= model(images.to(device))  # 提取模型输出的第一个元素
+        pred, _ = model(images.to(device))  
         pred_classes = torch.max(pred, dim=1)[1]
         accu_num += torch.eq(pred_classes, labels.to(device)).sum()
 
