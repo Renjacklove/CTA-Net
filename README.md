@@ -19,5 +19,5 @@ The model consists of:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/multi-branch-model.git
-   cd multi-branch-model
+   git clone https://github.com/Renjacklove/CTA-Net.git
+   cd CTA-Net
