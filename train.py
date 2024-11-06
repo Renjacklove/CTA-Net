@@ -4,10 +4,9 @@ import torch
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
-from utils import MyDataSet
 
-from CTANet import MainModel as create_model
-from utils import read_train_data, read_val_data, create_lr_scheduler, get_params_groups, train_one_epoch, evaluate
+from models.CTANet import MainModel as create_model
+from utils import read_train_data, read_val_data, create_lr_scheduler, get_params_groups, train_one_epoch, evaluate,MyDataSet
 
 def main(args):
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
