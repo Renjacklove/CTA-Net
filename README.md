@@ -40,12 +40,10 @@ The model consists of:
    python test.py --train_data_path ../datasets/aptos2019/test
    python test.py --train_data_path ../datasets/ddr/test
 
-
-## Clone the repository:
+-Clone the repository:
    ```bash
    git clone https://github.com/Renjacklove/CTA-Net.git
    cd CTA-Net
-
-## DOI
+-DOI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14046093.svg)](https://doi.org/10.5281/zenodo.14046093)
