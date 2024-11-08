@@ -26,36 +26,3 @@ The model consists of:
 ## DOI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14046093.svg)](https://doi.org/10.5281/zenodo.14046093)
-
-|--DMDC
-    |--ARAD_1K 
-    |--dataset 
-        |--Train_Spec
-            |--ARAD_1K_0001.mat
-            |--ARAD_1K_0002.mat
-            ： 
-            |--ARAD_1K_0950.mat
-  	  |--Train_RGB
-            |--ARAD_1K_0001.jpg
-            |--ARAD_1K_0002.jpg
-            ： 
-            |--ARAD_1K_0950.jpg
-        |--Valid_Spec
-            |--ARAD_1K_0901.mat
-            |--ARAD_1K_0902.mat
-            ： 
-            |--ARAD_1K_0950.mat
-  	  |--Valid_RGB
-            |--ARAD_1K_0901.jpg
-            |--ARAD_1K_0902.jpg
-            ： 
-            |--ARAD_1K_0950.jpg
-        |--Test_RGB
-            |--ARAD_1K_0951.jpg
-            |--ARAD_1K_0952.jpg
-            ： 
-            |--ARAD_1K_1000.jpg
-        |--split_txt
-            |--train_list.txt
-            |--valid_list.txt
-        |--mask.mat
