@@ -21,7 +21,12 @@ The model consists of:
 ## 2.Data preparation:
 -Download Aptos 2019 dataset:https://www.kaggle.com/datasets/mariaherrerot/aptos2019
 -Download DDR dataset:https://www.kaggle.com/datasets/mariaherrerot/ddrdataset
-``` |-- DMDC |-- simulation |-- datasets |-- cave_1024_28 |-- scene1.mat |-- scene2.mat : |-- scene205.mat |-- cave_1024_28_RGB |-- scene1.mat |-- scene2.mat : |-- scene205.mat |-- cave_512_28 |-- scene1.mat |-- scene2.mat : |-- scene30.mat |-- cave_512_28_RGB |-- scene1.mat |-- scene2.mat : |-- scene30.mat |-- TSA_simu_data |-- Truth |-- scene01.mat |-- scene02.mat : |-- scene10.mat |-- Truth_RGB |-- scene01.mat |-- scene02.mat : |-- scene10.mat |-- mask.mat ``` ```
+```
+├── data/
+    ├── train/
+    ├── val/
+    └── test/
+```
 
 ## 3.Training
 ```bash
