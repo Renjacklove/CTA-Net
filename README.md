@@ -28,20 +28,20 @@ The model consists of:
     └── test/
 ```
 
-## 3.Training
+## 3.Training&Testing
 ```bash
    cd /CTA-Net
    python tarin.py --train_data_path ../datasets/aptos2019/train --val_data_path ../dataset/aptos2019/val
    python tarin.py --train_data_path ../datasets/ddr/train --val_data_path ../dataset/ddr/val
 
-## 4.Testing
+
 ```bash
    cd /CTA-Net
    python test.py --train_data_path ../datasets/aptos2019/test
    python test.py --train_data_path ../datasets/ddr/test
 
 
-Clone the repository:
+## Clone the repository:
    ```bash
    git clone https://github.com/Renjacklove/CTA-Net.git
    cd CTA-Net
