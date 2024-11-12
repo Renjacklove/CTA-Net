@@ -51,10 +51,6 @@ CTANet relies on two datasets for diabetic retinopathy grading:
     │       └── test_images/
     ```
 
-3. **Data Preprocessing**:
-   Run the following command to preprocess the data if necessary:
-   ```bash
-   python preprocess_data.py --input data/aptos2019 --output data/aptos2019/processed
 
 ## Training and Testing
 
