@@ -63,19 +63,19 @@ To train and test the CTANet model on the APTOS 2019 dataset, follow these steps
 
 1. **Training the model**:
     ```bash
-    python train.py --config configs/aptos2019.yaml
+    python train.py --config datapath
     ```
 
 2. **Testing the model**:
     ```bash
-    python test.py --config configs/aptos2019.yaml
+    python test.py --config datapath
     ```
 
 3. **Evaluation on DDR Dataset**:
     Modify the configuration file or specify the dataset path for the DDR dataset.
     ```bash
-    python train.py --config configs/ddr.yaml
-    python test.py --config configs/ddr.yaml
+    python train.py --config datapath
+    python test.py --config datapath
     ```
 
 ### One-click Run
@@ -93,18 +93,7 @@ bash run_experiment.sh
 ### 2. Can I run this on CPU?
    - CTANet is optimized for GPU. While it can run on a CPU, the training and testing time will be significantly longer.
 
-### 3. How do I set up a specific random seed for reproducibility?
-   - Random seeds can be set in `train.py` to ensure reproducible results:
-     ```python
-     import torch
-     import numpy as np
-     import random
-     
-     seed = 42
-     torch.manual_seed(seed)
-     np.random.seed(seed)
-     random.seed(seed)
-     ```
+
 
 ## License and Citation
 
