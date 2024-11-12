@@ -34,8 +34,8 @@ Our experiments on the APTOS 2019 and DDR datasets demonstrate that CTANet achie
 ## Dataset Preparation
 
 CTANet relies on two datasets for diabetic retinopathy grading:
-- **APTOS 2019 Dataset**: Available from [Kaggle](https://www.kaggle.com/datasets/mariaherrerot/aptos2019)
-- **DDR Dataset**: Available from [Kaggle](https://www.kaggle.com/datasets/mariaherrerot/ddrdataset)
+- **APTOS 2019 Dataset**: Available from [aptos2019](https://www.kaggle.com/datasets/mariaherrerot/aptos2019)
+- **DDR Dataset**: Available from [ddr](https://www.kaggle.com/datasets/mariaherrerot/ddrdataset)
 
 ### Steps to Download and Organize Data
 1. Download the datasets from Kaggle (requires a Kaggle account).
