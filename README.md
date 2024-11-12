@@ -82,9 +82,10 @@ To train and test the CTANet model on the APTOS 2019 dataset, follow these steps
 You can also use the `run_experiment.sh` script to perform training and testing in one step:
 ```bash
 bash run_experiment.sh
+```
 
 
-## FAQ
+### FAQ
 
 ### 1. How can I resolve dependency issues?
    - Ensure you have installed all dependencies listed in `requirements.txt`. If issues persist, consider using `pip install --upgrade <package_name>` for problematic packages.
@@ -117,6 +118,6 @@ If you have any questions or run into issues, please reach out:
 - **Email**: 152514845@qq.com
 
 
-
+##DOi
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14046093.svg)](https://doi.org/10.5281/zenodo.14046093)
