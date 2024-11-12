@@ -107,6 +107,6 @@ If you have any questions or run into issues, please reach out:
 - **Email**: 152514845@qq.com
 
 
-##DOi
+## DOI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14046093.svg)](https://doi.org/10.5281/zenodo.14046093)
